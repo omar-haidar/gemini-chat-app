@@ -15,18 +15,18 @@ An intelligent command-line chat application powered by Google's Gemini AI with 
 
 # 📋 Requirements
 
-· Python 3.8 or higher
-· Google AI Studio API key (Get it free)
-· Internet connection
+ - Python 3.8 or higher
+ - Google AI Studio API key (Get it free)
+ - Internet connection
 
 # 🚀 Installation
 
 ### Common Steps (All Platforms)
 
 1. Get your API Key:
-   · Visit Google AI Studio
-   · Click "Create API Key"
-   · Copy your API key
+   - Visit Google AI Studio
+   - Click "Create API Key"
+   - Copy your API key
 2. Clone or download this project:
    ```bash
    git clone https://github.com/omar-haidar/gemini-chat-app.git
@@ -92,11 +92,11 @@ python main.py
 
 Note for Android users:
 
-· If you get externally-managed-environment error, use:
+- If you get externally-managed-environment error, use:
   ```bash
   pip install google-generativeai --break-system-packages
   ```
-· Make sure Termux has storage permission:
+- Make sure Termux has storage permission:
   ```bash
   termux-setup-storage
   ```
@@ -267,10 +267,10 @@ Cause: API key is incorrect or has extra spaces/newlines
 
 Solution:
 
-· Copy the API key directly from Google AI Studio
-· Ensure no extra spaces or newlines
-· Delete settings.txt and re-enter the key
-· If persistent, create a new API key
+- Copy the API key directly from Google AI Studio
+- Ensure no extra spaces or newlines
+- Delete settings.txt and re-enter the key
+- If persistent, create a new API key
 
 ---
 
@@ -293,9 +293,9 @@ Cause: Write permissions issue or file system error
 
 Solution:
 
-· Ensure the project directory is writable
-· Check disk space
-· Try manual creation:
+- Ensure the project directory is writable
+- Check disk space
+- Try manual creation:
   ```bash
   echo "API_KEY=your_key_here" > settings.txt
   ```
@@ -308,9 +308,9 @@ Cause: Network issues or model selection
 
 Solution:
 
-· Use gemini-1.5-flash for faster responses
-· Check your internet connection
-· For complex queries, expect longer processing times
+- Use gemini-1.5-flash for faster responses
+- Check your internet connection
+- For complex queries, expect longer processing times
 
 ---
 
@@ -320,9 +320,9 @@ Cause: The conversations/ folder might be deleted or moved
 
 Solution:
 
-· Check if conversations/ folder exists
-· Use /list to see available conversations
-· Ensure you're in the correct project directory
+- Check if conversations/ folder exists
+- Use /list to see available conversations
+- Ensure you're in the correct project directory
 
 ---
 
@@ -332,9 +332,9 @@ Cause: Terminal encoding issues (common on Windows)
 
 Solution:
 
-· Windows: Use Windows Terminal instead of Command Prompt
-· Linux/Mac: Ensure UTF-8 encoding
-· Android: Use Termux's default terminal
+- Windows: Use Windows Terminal instead of Command Prompt
+- Linux/Mac: Ensure UTF-8 encoding
+- Android: Use Termux's default terminal
 
 ---
 
@@ -344,9 +344,9 @@ Cause: Too many requests to the API
 
 Solution:
 
-· Wait a few seconds between requests
-· The free tier has rate limits
-· Consider upgrading your API plan if needed
+- Wait a few seconds between requests
+- The free tier has rate limits
+- Consider upgrading your API plan if needed
 
 ---
 
@@ -361,8 +361,8 @@ Solution:
   __pycache__/
   *.pyc
   ```
-· ✅ Rotate your API key regularly
-· ✅ Use environment variables in production:
+- ✅ Rotate your API key regularly
+- ✅ Use environment variables in production:
   ```bash
   export GOOGLE_API_KEY="your_key_here"
   ```
@@ -425,8 +425,8 @@ This project is open-source and available under the MIT License.
 
 # 🙏 Acknowledgments
 
-· Google Generative AI for the Gemini API
-· Google AI Studio for API key management
+- Google Generative AI for the Gemini API
+- Google AI Studio for API key management
 
 ---
 
