@@ -1,3 +1,4 @@
-**/__pycache__/
-
-**/conversations/
+settings.txt
+conversations/
+__pycache__/
+*.pyc
