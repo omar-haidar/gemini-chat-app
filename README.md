@@ -29,7 +29,7 @@ An intelligent command-line chat application powered by Google's Gemini AI with 
    - Copy your API key
 2. Clone or download this project:
    ```bash
-   git clone https://github.com/omar-haidar/gemini-chat-app.git
+   git clone https://github.com/omar-haidar/gemini-chat-app-console.git
    cd gemini-chat-app
    ```
    Or download and extract the ZIP file.
