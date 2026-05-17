@@ -100,6 +100,29 @@ Note for Android users:
   ```bash
   termux-setup-storage
   ```
+- A cryptography error may appear when installing on Termux. This error occurs because the cryptography library needs a Rust compiler and some components are compiled, and this is not fully supported in Termux on Android.
+
+The solution is to install the missing packages.
+ ```bash
+ # تحديث الحزم الأساسية
+pkg update && pkg upgrade -y
+
+# تثبيت الأدوات المطلوبة
+pkg install python rust binutils build-essential cmake -y
+
+# تثبيت المكتبات المطلوبة للتشفير
+pkg install openssl libffi -y
+
+# تعيين متغيرات البيئة
+export CARGO_BUILD_TARGET=aarch64-linux-android
+export OPENSSL_DIR=$PREFIX
+
+# الآن حاول تثبيت المكتبة
+pip install cryptography
+
+# ثم ثبت google-generativeai
+pip install google-generativeai
+```
 
 ---
 
